@@ -26,7 +26,7 @@ def data_analyzer(text, source):
     response = requests.post(
         "https://api.monkeylearn.com/v2/extractors/ex_y7BPYzNG/extract/",
         data=json.dumps(data),
-        headers={'Authorization': 'Token 17dd37e207bf4b9ae83996e39e296c14bd722c12',
+        headers={'Authorization': 'Token YOUR-TOKEN',
                 'Content-Type': 'application/json'})
 
     results = json.loads(response.text)["result"][0]
